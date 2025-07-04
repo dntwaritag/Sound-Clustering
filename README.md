@@ -37,8 +37,9 @@ Two clustering algorithms were implemented and compared:
 ## Evaluation
 | Algorithm | Silhouette Score | Davies-Bouldin Index |
 | :-------- | :--------------- | :------------------- |
-| K-Means   | 0.5360           | 0.9416               |
-| DBSCAN    | N/A (Failed)     | N/A (Failed)         |
+| K-Means   | 0.1749          | 1.6298               |
+| DBSCAN    | -0.1953     | 1.7098       |
+
 
 **Discussion of Results:**
 K-Means successfully identified 4 clusters with good compactness and separation, as evidenced by its positive Silhouette Score and reasonable Davies-Bouldin Index. In contrast, DBSCAN, with its current parameters, did not form meaningful clusters, highlighting its sensitivity to parameter tuning and the non-uniform density of the dataset. This suggests K-Means was more robust for this specific dataset and feature representation.
